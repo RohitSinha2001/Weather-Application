@@ -246,4 +246,5 @@ function formatDate(timestamp) {
   
   let defaultUnit = document.querySelector(".active-unit");
   
-  search("kolkata");
+  search("Kolkata");
+  
