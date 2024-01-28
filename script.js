@@ -29,7 +29,8 @@ function formatDate(timestamp) {
     cityElement.innerHTML = response.data.name;
   
     let dateElement = document.querySelector("#date");
-    dateElement.innerHTML = formatDate(response.data.dt * 1000);
+    let localTime = new Date();
+    dateElement.innerHTML = formatDate(localTime.getTime());
   
     let descriptionElement = document.querySelector("#weather-description");
     descriptionElement.innerHTML = response.data.weather[0].description;
